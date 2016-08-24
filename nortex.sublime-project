@@ -1,0 +1,27 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				".babelrc",
+				".editorconfig",
+				".eslintignore",
+				".eslintrc",
+				".travis.yml",
+				"appveyor.yml",
+				"LICENSE",
+				"nortex.sublime-project",
+				"plugins-config.json",
+				"tars.json",
+				"webpack.config.js",
+				"gulpfile.js"
+			],
+			"folder_exclude_patterns":
+			[
+				"tars"
+			],
+			"path": "."
+		}
+	]
+}

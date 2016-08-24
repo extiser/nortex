@@ -1,0 +1,37 @@
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+
+  box-sizing: border-box;
+  padding: 50px;
+
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    display: block;
+
+    text-indent: -9999px;
+    &._white {
+      @include bg-svg($logo-white);
+    }
+    &._purple {
+      @include bg-svg($logo-purple);
+    }
+  }
+  &__menu {
+    display: block;
+
+    text-indent: -9999px;
+    &._white {
+      @include bg-svg($menu-white);
+    }
+    &._purple {
+      @include bg-svg($menu-purple);
+    }
+  }
+}

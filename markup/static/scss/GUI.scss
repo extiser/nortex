@@ -1,0 +1,96 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+.section {
+  background: linear-gradient(45deg, $blue 33%, $gray 100%);
+  &:before {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    content: "";
+
+    background-color: rgba($black, .2);
+  }
+}
+
+a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+
+  color: $white;
+
+  font-weight: normal;
+}
+
+.title {
+  position: relative;
+  z-index: 3;
+
+  letter-spacing: .05em;
+
+  font-family: $Code-Pro-Bold;
+  &._h1 {
+    font-size: 30px;
+    line-height: 33px;
+    &:before {
+      position: relative;
+
+      display: block;
+
+      margin: auto;
+      margin-bottom: 47px;
+
+      content: "";
+
+      @include bg-svg($hexagon-big);
+      @media screen and (max-width: 1280px) {
+        margin-top: -47px;
+        margin-bottom: 0;
+
+        transform: scale(.7);
+      }
+    }
+  }
+  &._h2 {
+    font-size: 38px;
+    line-height: 33px;
+  }
+  &._h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+p {
+  font-family: $Oswald-Light;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.drawing {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  > div {
+    position: absolute;
+  }
+}

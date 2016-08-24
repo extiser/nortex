@@ -1,0 +1,8 @@
+@include font-face(Code-Pro-Bold, "../fonts/Code-Pro-Bold");
+$Code-Pro-Bold: 'Code-Pro-Bold', Helvetica, Arial, sans-serif;
+
+@include font-face(Oswald-Light, "../fonts/Oswald-Light");
+$Oswald-Light: 'Oswald-Light', Helvetica, Arial, sans-serif;
+
+@include font-face(Oswald-Regular, "../fonts/Oswald-Regular");
+$Oswald-Regular: 'Oswald-Regular', Helvetica, Arial, sans-serif;

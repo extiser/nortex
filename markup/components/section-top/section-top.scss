@@ -1,0 +1,139 @@
+.section-top {
+  &__title {
+    text-align: center;
+
+    @include absolute-center;
+  }
+}
+
+.phone {
+  position: fixed;
+  z-index: 1;
+  bottom: 34px;
+  left: 50px;
+
+  text-decoration: none;
+
+  color: $white;
+
+  font-family: $Oswald-Regular;
+  font-size: 16px;
+
+  @include transition;
+  &:hover {
+    @media screen and (min-width: 1200px) {
+      color: rgba($white, .3);
+    }
+  }
+}
+
+.change-language {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+  bottom: 34px;
+
+  color: rgba($white, .3);
+
+  font-family: $Oswald-Regular;
+  font-size: 16px;
+  &__item {
+    text-decoration: none;
+
+    color: rgba($white, .3);
+
+    @include transition;
+    &:hover {
+      cursor: pointer;
+      @media screen and (min-width: 1200px) {
+        color: $white;
+      }
+    }
+    &._active {
+      color: $white;
+      &:hover {
+        cursor: default;
+      }
+    }
+  }
+  &__separator {
+    padding-right: 5px;
+    padding-left: 5px;
+    &:hover {
+      cursor: default;
+    }
+  }
+}
+
+.next {
+  z-index: 3;
+  bottom: 70px;
+
+  display: block;
+
+  width: 40px;
+  height: 40px;
+
+  text-indent: -9999px;
+
+  border: 2px solid $white;
+  border-radius: 50%;
+
+  @include horizontal-center;
+  @include transition;
+  @media screen and (max-width: 1360px) {
+    bottom: 35px;
+  }
+  &:before {
+    position: absolute;
+    top: 18px;
+    right: 0;
+    left: 0;
+
+    display: block;
+
+    margin: auto;
+
+    content: "";
+
+    @include transition;
+    @include bg-svg($arrow-down);
+  }
+  &:hover {
+    transform: translateX(-50%) scale(1.2);
+    &:before {
+      transform: scale(.85);
+    }
+  }
+}
+
+
+.section-top-drawing-1 {
+  bottom: -195px;
+  left: -128px;
+
+  @include bg-svg($section-top-drawing-1);
+}
+
+.section-top-drawing-2 {
+  z-index: 1;
+  top: -83px;
+  left: 172px;
+
+  @include bg-svg($section-top-drawing-2);
+}
+
+.section-top-drawing-3 {
+  z-index: 0;
+  top: -14px;
+  right: -548px;
+
+  @include bg-svg($section-top-drawing-3);
+}
+
+.section-top-drawing-4 {
+  right: 10px;
+  bottom: -28px;
+
+  @include bg-svg($section-top-drawing-4);
+}
