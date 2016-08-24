@@ -1,2 +1,58 @@
-.section-services {  
+.section-services {
+  &__content {
+    z-index: 3;
+
+    @include absolute-center;
+  }
+}
+
+.section-services-list {
+  display: flex;
+
+  margin-top: 60px;
+
+  justify-content: center;
+  align-items: stretch;
+}
+
+.section-services-item {
+  margin-right: 130px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &__top {
+    position: relative;
+
+    @include bg-svg($hexagon-medium);
+  }
+  &__title {
+    @include absolute-center;
+  }
+  &__line {
+    position: absolute;
+    bottom: -40px;
+
+    width: 1px;
+    height: 102px;
+
+    background-color: rgba($white, .7);
+
+    @include horizontal-center;
+  }
+  &__bottom {
+    margin-top: 73px;
+  }
+}
+
+.section-services-drawing-1 {
+  top: -175px;
+  left: 278px;
+
+  @include bg-svg($section-services-drawing-1);
+}
+.section-services-drawing-2 {
+  right: 10px;
+  bottom: -28px;
+
+  @include bg-svg($section-services-drawing-2);
 }

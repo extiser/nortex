@@ -51,11 +51,21 @@ $(document).ready(function() {
     slideSelector: '.slide',
 
     //events
-    onLeave: function(index, nextIndex, direction){},
+    onLeave: function(index, nextIndex, direction){
+      var leavingSection = $(this);
+
+      if (index != '5' && direction == 'down') {
+        $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_white').addClass('_purple');
+      }
+
+      else if (index == '5' && direction == 'up') {
+        $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
+      }
+    },
     afterLoad: function(anchorLink, index){},
     afterRender: function(){},
     afterResize: function(){},
     afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
   });
 });

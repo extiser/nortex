@@ -3,6 +3,7 @@ html(class="no-js", lang="ru")
 
   include ../components/head/head
   include ../components/header/header
+  include ../components/phone/phone
   include ../components/menu/menu
   include ../components/section-top/section-top
   include ../components/section-about/section-about
@@ -10,6 +11,7 @@ html(class="no-js", lang="ru")
   include ../components/section-partners/section-partners
   include ../components/section-contacts/section-contacts
   include ../components/contact-block/contact-block
+  include ../components/form/form
   include ../components/footer/footer
 
   head
@@ -17,6 +19,7 @@ html(class="no-js", lang="ru")
   body
     |%=symbols=%
     +header
+    +phone
     #fullpage
       +section-top
       +section-about

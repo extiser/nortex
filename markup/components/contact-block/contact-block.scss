@@ -1,2 +1,75 @@
-.contact-block {  
+.contact-block {
+  z-index: 10;
+
+  @include absolute-center;
+}
+
+.contact-block-contacts,
+.contact-block-form {
+  width: 100%;
+
+  @include absolute-center;
+}
+
+.contact-block-contacts {
+  &__list {
+    margin-bottom: 95px;
+  }
+  &__title {
+    margin-bottom: 55px;
+  }
+}
+
+.contact-block-form__title {
+  margin-bottom: 50px;
+}
+
+
+// анимация переворота
+.flip-container {
+  perspective: 1000;
+}
+.flip-container._hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container {
+  position: relative;
+
+  width: 608px;
+  height: 702px;
+}
+.flipper-front,
+.flipper-back {
+  &:before {
+    display: block;
+
+    content: "";
+
+    @include bg-svg($hexagon-contact);
+  }
+}
+
+.flipper {
+  position: relative;
+
+  @include transition;
+  transform-style: preserve-3d;
+}
+
+.flipper-front,
+.flipper-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  backface-visibility: hidden;
+}
+
+.flipper-front {
+  z-index: 2;
+}
+
+.flipper-back {
+  transform: rotateY(180deg);
 }

@@ -1,2 +1,29 @@
-.section-partners {  
+.section-partners {
+  &__content {
+    z-index: 3;
+
+    @include absolute-center;
+  }
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__molot {
+    margin-bottom: 90px;
+
+    @include bg-svg($partner-molot);
+  }
+}
+
+.section-partners-drawing-1 {
+  bottom: -47px;
+  left: -53px;
+
+  @include bg-svg($section-partners-drawing-1);
+}
+
+.section-partners-drawing-2 {
+  top: 23px;
+  right: 5px;
+
+  @include bg-svg($section-partners-drawing-2);
 }

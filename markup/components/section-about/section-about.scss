@@ -1,2 +1,26 @@
-.section-about {  
+.section-about {
+  &__content {
+    z-index: 3;
+
+    max-width: 495px;
+
+    @include absolute-center;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.section-about-drawing-1 {
+  top: 73px;
+  left: -309px;
+
+  @include bg-svg($section-about-drawing-1);
+}
+
+.section-about-drawing-2 {
+  right: 277px;
+  bottom: -180px;
+
+  @include bg-svg($section-about-drawing-2);
 }

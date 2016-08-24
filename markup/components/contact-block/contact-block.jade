@@ -1,2 +1,14 @@
 mixin contact-block(data)
   .contact-block
+    .flip-container.jsFlipperContainer._hover
+      .flipper
+        .flipper-front
+          .contact-block-contacts
+            h2.contact-block-contacts__title.title._h2 Контакты
+            .contact-block-contacts__list
+              p Россия, Москва 125130 <br>Антонова-Овсеенко, 12 <br>+7 (495) 134-44-67 <br> info@norteh.ru
+            a(href="javascript:void(0)" title="Напишите нам").button.jsFlipperTrigger Напишите нам
+        .flipper-back
+          .contact-block-form
+            h2.contact-block-form__title.title._h2 Напишите нам
+            +form

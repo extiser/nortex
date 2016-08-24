@@ -1,0 +1,13 @@
+mixin form(data)
+  form.form.jsForm
+    .form-element
+      input(type="text" value="" placeholder="Как Вас зовут?" data-type="input" data-required="true").jsFormField
+
+    .form-element
+      input(type="text" value="" placeholder="Телефон / Email" data-type="input" data-required="true").jsFormField
+
+    .form-element._textarea
+      textarea(placeholder="Ваше сообщение" data-type="textarea" data-required="false").jsFormField
+
+    .form-submit
+      input(type="submit" value="Отправить").button

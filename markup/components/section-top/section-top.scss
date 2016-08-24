@@ -6,27 +6,6 @@
   }
 }
 
-.phone {
-  position: fixed;
-  z-index: 1;
-  bottom: 34px;
-  left: 50px;
-
-  text-decoration: none;
-
-  color: $white;
-
-  font-family: $Oswald-Regular;
-  font-size: 16px;
-
-  @include transition;
-  &:hover {
-    @media screen and (min-width: 1200px) {
-      color: rgba($white, .3);
-    }
-  }
-}
-
 .change-language {
   position: absolute;
   z-index: 1;
@@ -102,7 +81,7 @@
   &:hover {
     transform: translateX(-50%) scale(1.2);
     &:before {
-      transform: scale(.85);
+      transform: scale(.75);
     }
   }
 }
