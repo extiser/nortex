@@ -8,9 +8,8 @@
     margin-bottom: 90px;
   }
   &__molot {
-    margin-bottom: 90px;
-
     @include bg-svg($partner-molot);
+    margin: 0 auto 90px;
   }
 }
 
