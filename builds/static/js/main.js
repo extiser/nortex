@@ -13205,18 +13205,24 @@ $(document).ready(function() {
     onLeave: function(index, nextIndex, direction){
       var leavingSection = $(this);
 
-      if (index != '5' && direction == 'down') {
+      if (index == '4' && direction == 'down') {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_white').addClass('_purple');
-      }
-
-      else if (index == '5' && direction == 'up') {
+      } else if (index == '5' && direction == 'up') {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
       }
     },
-    afterLoad: function(anchorLink, index){},
+    afterLoad: function(anchorLink, index){
+      var loadedSection = $(this);
+
+      if(index == 5){
+        $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_white').addClass('_purple');
+      } else {
+        $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
+      }
+    },
     afterRender: function(){},
     afterResize: function(){},
-    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+    afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
     onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
   });
 });
