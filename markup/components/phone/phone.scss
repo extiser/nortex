@@ -4,8 +4,11 @@
   bottom: 34px;
   left: 50px;
 
+  visibility: visible;
+
   text-decoration: none;
 
+  opacity: 1;
   color: $white;
 
   font-family: $Oswald-Regular;
@@ -17,7 +20,9 @@
       color: rgba($white, .3);
     }
   }
-  &._none {
-    display: none;
+  &._hide {
+    visibility: hidden;
+
+    opacity: 0;
   }
 }

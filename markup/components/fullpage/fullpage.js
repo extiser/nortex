@@ -1,13 +1,13 @@
 $(document).ready(function() {
   $('#fullpage').fullpage({
     //Navigation
-    menu: '#menu',
+    menu: '#fp-nav',
     lockAnchors: false,
     anchors:['top', 'about', 'services' , 'partners', 'contacts'],
-    navigation: false,
+    navigation: true,
     navigationPosition: 'right',
-    navigationTooltips: ['firstSlide', 'secondSlide'],
-    showActiveTooltip: true,
+    navigationTooltips: ['НОРТЕХ', 'О компании', 'Услуги', 'Партнеры', 'Контакты'],
+    showActiveTooltip: false,
     slidesNavigation: false,
     // slidesNavPosition: 'bottom',
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
     sectionsColor : ['#ccc', '#fff'],
     paddingTop: '3em',
     paddingBottom: '10px',
-    fixedElements: '#header, .footer',
+    fixedElements: '',
     responsiveWidth: 0,
     responsiveHeight: 0,
 
@@ -56,8 +56,14 @@ $(document).ready(function() {
 
       if (index == '4' && direction == 'down') {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_white').addClass('_purple');
+        $('.phone').addClass('_hide');
       } else if (index == '5' && direction == 'up') {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
+        $('.phone').removeClass('_hide');
+      }
+
+      if ($('.jsMenuList').hasClass('_active') && $('.jsHeaderMenu').hasClass('_active')) {
+        $('.jsMenuList, .jsHeaderMenu').removeClass('_active');
       }
     },
     afterLoad: function(anchorLink, index){
@@ -65,13 +71,18 @@ $(document).ready(function() {
 
       if(index == 5){
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_white').addClass('_purple');
+        $('.phone').addClass('_hide');
       } else {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
+        $('.phone').removeClass('_hide');
+        
       }
     },
     afterRender: function(){},
     afterResize: function(){},
     afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
-    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
+    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+        
+    }
   });
 });
