@@ -4,8 +4,44 @@
 		"selected_items":
 		[
 			[
+				"tran",
+				"transition"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"fon",
+				"font-size	(menu.scss)"
+			],
+			[
 				"visi",
-				"visible"
+				"visible	(menu.scss)"
+			],
+			[
+				"margn",
+				"margin-bottom"
+			],
+			[
+				"menu",
+				"menu-block"
+			],
+			[
+				"me",
+				"menu-block"
 			],
 			[
 				"form",
@@ -22,18 +58,6 @@
 			[
 				"thi",
 				"thisRequired"
-			],
-			[
-				"fon",
-				"font-family"
-			],
-			[
-				"tran",
-				"transition"
-			],
-			[
-				"text",
-				"textarea	(form.scss)"
 			],
 			[
 				"marign",
@@ -102,10 +126,6 @@
 			[
 				"font",
 				"font-family"
-			],
-			[
-				"trans",
-				"transform"
 			],
 			[
 				"background",
@@ -392,10 +412,6 @@
 				"justifyContent"
 			],
 			[
-				"he",
-				"header	(header.jade)"
-			],
-			[
 				"ma",
 				"margin"
 			],
@@ -484,10 +500,6 @@
 				"color"
 			],
 			[
-				"me",
-				"medium-4"
-			],
-			[
 				"al",
 				"align-bottom"
 			],
@@ -502,29 +514,33 @@
 			[
 				"backgrou",
 				"background-color"
-			],
-			[
-				"log",
-				"login-page-form-native"
-			],
-			[
-				"login-pa",
-				"login-page-form"
-			],
-			[
-				"l",
-				"login-page-form"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "markup/components/contact-block/contact-block.jade",
+			"file": "markup/components/section-contacts/section-contacts.jade",
 			"settings":
 			{
-				"buffer_size": 599,
+				"buffer_size": 119,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/section-contacts/section-contacts.js",
+			"settings":
+			{
+				"buffer_size": 1954,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "markup/components/section-partners/section-partners.scss",
+			"settings":
+			{
+				"buffer_size": 432,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -602,48 +618,53 @@
 		"/Users/extiser/git/nortex",
 		"/Users/extiser/git/nortex/markup",
 		"/Users/extiser/git/nortex/markup/components",
-		"/Users/extiser/git/nortex/markup/components/contact-block",
-		"/Users/extiser/git/nortex/markup/components/section-contacts",
+		"/Users/extiser/git/nortex/markup/components/section-partners",
 		"/Users/extiser/git/nortex/markup/pages",
 		"/Users/extiser/git/nortex/markup/static",
 		"/Users/extiser/git/nortex/markup/static/scss"
 	],
 	"file_history":
 	[
+		"/Users/extiser/git/nortex/markup/components/header/header.jade",
+		"/Users/extiser/git/nortex/markup/components/menu/menu.js",
+		"/Users/extiser/git/nortex/markup/components/menu/menu.jade",
+		"/Users/extiser/git/nortex/markup/components/menu/menu.scss",
+		"/Users/extiser/git/nortex/markup/components/section-top/section-top.scss",
+		"/Users/extiser/git/nortex/markup/components/header/header.scss",
+		"/Users/extiser/git/nortex/markup/components/phone/phone.scss",
+		"/Users/extiser/git/nortex/markup/components/footer/footer.jade",
+		"/Users/extiser/git/nortex/markup/components/section-contacts/section-contacts.jade",
+		"/Users/extiser/git/nortex/markup/pages/index.jade",
+		"/Users/extiser/git/nortex/markup/components/fp-nav/fp-nav.jade",
+		"/Users/extiser/git/nortex/markup/components/fullpage/fullpage.js",
+		"/Users/extiser/git/nortex/markup/components/fullpage/fullpage.scss",
+		"/Users/extiser/git/nortex/markup/components/footer/footer.scss",
+		"/Users/extiser/git/nortex/markup/components/default_component_scheme.json",
+		"/Users/extiser/git/nortex/markup/static/scss/fonts.scss",
+		"/Users/extiser/git/nortex/markup/components/contact-block/contact-block.jade",
 		"/Users/extiser/git/nortex/markup/components/form/form.js",
 		"/Users/extiser/git/nortex/markup/components/form/form.jade",
 		"/Users/extiser/git/nortex/markup/components/form/form.scss",
 		"/Users/extiser/git/nortex/markup/static/scss/vars.scss",
-		"/Users/extiser/git/nortex/markup/components/fullpage/fullpage.js",
 		"/Users/extiser/git/nortex/markup/static/scss/GUI.scss",
 		"/Users/extiser/git/nortex/markup/components/contact-block/contact-block.scss",
-		"/Users/extiser/git/nortex/markup/components/contact-block/contact-block.jade",
-		"/Users/extiser/git/nortex/markup/pages/index.jade",
 		"/Users/extiser/git/nortex/markup/components/contact-block/contact-block.js",
 		"/Volumes/Transcend/Work/Нортекс/snazzy-maps-example-composite-theme-v-1-style.html",
-		"/Users/extiser/git/nortex/markup/components/section-contacts/section-contacts.jade",
 		"/Users/extiser/git/nortex/markup/components/section-contacts/section-contacts.scss",
-		"/Users/extiser/git/nortex/markup/components/header/header.jade",
 		"/Users/extiser/git/nortex/markup/components/head/head.jade",
 		"/Users/extiser/git/nortex/markup/components/section-contacts/section-contacts.js",
-		"/Users/extiser/git/nortex/markup/components/header/header.scss",
-		"/Users/extiser/git/nortex/markup/components/phone/phone.scss",
 		"/Users/extiser/git/nortex/markup/components/section-partners/section-partners.jade",
 		"/Users/extiser/git/nortex/markup/components/section-partners/section-partners.scss",
 		"/Users/extiser/git/nortex/markup/components/section-services/section-services.jade",
 		"/Users/extiser/git/nortex/markup/components/section-services/section-services.scss",
 		"/Users/extiser/git/nortex/markup/components/section-about/section-about.scss",
-		"/Users/extiser/git/nortex/markup/components/section-top/section-top.scss",
 		"/Users/extiser/git/nortex/markup/components/section-about/section-about.jade",
 		"/Users/extiser/git/nortex/markup/components/section-top/section-top.jade",
 		"/Users/extiser/git/nortex/markup/components/phone/phone.jade",
 		"/Users/extiser/git/nortex/markup/static/scss/mixins.scss",
-		"/Users/extiser/git/nortex/markup/static/scss/fonts.scss",
 		"/Users/extiser/git/nortex/tars-config.js",
 		"/Users/extiser/git/ozone/markup/static/scss/fonts.scss",
 		"/Users/extiser/git/nortex/markup/static/scss/common.scss",
-		"/Users/extiser/git/nortex/markup/components/default_component_scheme.json",
-		"/Users/extiser/git/nortex/markup/components/fullpage/fullpage.scss",
 		"/Users/extiser/git/nortex/nortex.sublime-project",
 		"/Users/extiser/git/k-landing/markup/components/section-top/section-top.jade",
 		"/Users/extiser/git/k-landing/markup/components/section-top/section-top.scss",
@@ -731,17 +752,11 @@
 		"/Users/extiser/git/k-landing/markup/static/fonts/ProbaPro-Medium.svg",
 		"/Users/extiser/git/k-landing/markup/static/fonts/ProbaPro-Medium.otf",
 		"/Users/extiser/git/k-landing/markup/static/fonts/ProbaPro-Light.woff",
-		"/Users/extiser/git/k-landing/markup/static/fonts/ProbaPro-Light.svg",
-		"/Users/extiser/git/k-landing/markup/static/fonts/ProbaPro-Light.otf",
-		"/Users/extiser/git/k-landing/markup/components/top-menu/data/data.js",
-		"/Users/extiser/git/k-landing/markup/components/section-top/data/data.js",
-		"/Users/extiser/git/k-landing/markup/components/section-map/data/data.js",
-		"/Users/extiser/git/k-landing/markup/components/section-gallery/data/data.js",
-		"/Users/extiser/git/k-landing/markup/components/section-elite/data/data.js"
+		"/Users/extiser/git/k-landing/markup/static/fonts/ProbaPro-Light.svg"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -756,6 +771,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"tooltip",
 			".back",
 			".front",
 			".slide",
@@ -882,8 +898,7 @@
 			".col-lg-11.col-lg-offset-1.col-xs-12.col-md-12",
 			".col-xs-12",
 			".col-md",
-			".col-xs-12",
-			".visible-xs-block.visible-md-block"
+			".col-xs-12"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -1029,30 +1044,90 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "markup/components/contact-block/contact-block.jade",
+					"file": "markup/components/section-contacts/section-contacts.jade",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 599,
+						"buffer_size": 119,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								81,
-								81
+								118,
+								118
 							]
 						],
 						"settings":
 						{
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "markup/components/section-contacts/section-contacts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								446,
+								446
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "markup/components/section-partners/section-partners.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 432,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},

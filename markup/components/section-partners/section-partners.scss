@@ -3,13 +3,24 @@
     z-index: 3;
 
     @include absolute-center;
+    @media screen and (max-width: 420px) {
+      width: 90%;
+    }
   }
   &__title {
     margin-bottom: 90px;
+    @media screen and (max-width: 420px) {
+      margin-bottom: 40px;
+    }
   }
   &__molot {
-    @include bg-svg($partner-molot);
     margin: 0 auto 90px;
+
+    @include bg-svg($partner-molot);
+    @media screen and (max-width: 420px) {
+      @include bg-svg($partner-molot-mobile);
+      margin-bottom: 40px;
+    }
   }
 }
 
