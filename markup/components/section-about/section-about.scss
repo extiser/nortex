@@ -5,13 +5,16 @@
     max-width: 495px;
 
     @include absolute-center;
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 740px) {
       width: 90%;
     }
   }
   &__title {
     margin-bottom: 50px;
     @media screen and (max-width: 420px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 740px) and (orientation: landscape) {
       margin-bottom: 20px;
     }
   }

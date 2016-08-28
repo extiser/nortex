@@ -79,6 +79,12 @@ p {
 
         transform: scale(.64);
       }
+      @media screen and (max-width: 740px) and (orientation: landscape) {
+        margin-top: -127px;
+        margin-bottom: -97px;
+
+        transform: scale(.34);
+      }
     }
   }
   &._h2 {
@@ -112,6 +118,14 @@ p {
   &._h3 {
     font-size: 30px;
     line-height: 36px;
+    @media screen and (max-width: 420px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+    @media screen and (max-width: 740px) and (orientation: landscape) {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -119,6 +133,10 @@ p {
   font-family: $Oswald-Light;
   font-size: 18px;
   line-height: 24px;
+  @media screen and (max-width: 580px) and (orientation: landscape) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .button {
@@ -165,7 +183,7 @@ p {
   height: 100%;
   > div {
     position: absolute;
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 740px) {
       transform: scale(.6);
     }
   }

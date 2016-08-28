@@ -18,6 +18,10 @@
   @media screen and (max-width: 420px) {
     display: none;
   }
+  @media screen and (max-width: 740px) and (orientation: landscape) {
+    bottom: 15px;
+    left: 20px;
+  }
   &:hover {
     @media screen and (min-width: 1200px) {
       color: rgba($white, .3);

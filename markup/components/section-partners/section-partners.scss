@@ -6,11 +6,20 @@
     @media screen and (max-width: 420px) {
       width: 90%;
     }
+    @media screen and (max-width: 580px) and (orientation: landscape) {
+      width: 90%;
+    }
   }
   &__title {
     margin-bottom: 90px;
     @media screen and (max-width: 420px) {
       margin-bottom: 40px;
+    }
+    @media screen and (max-width: 740px) and (orientation: landscape) {
+      margin-bottom: 0;
+    }
+    @media screen and (max-width: 580px) and (orientation: landscape) {
+      margin-bottom: 20px;
     }
   }
   &__molot {
@@ -18,8 +27,19 @@
 
     @include bg-svg($partner-molot);
     @media screen and (max-width: 420px) {
-      @include bg-svg($partner-molot-mobile);
       margin-bottom: 40px;
+
+      @include bg-svg($partner-molot-mobile);
+    }
+    @media screen and (max-width: 740px) and (orientation: landscape) {
+      margin-bottom: 0;
+
+      transform: scale(.6);
+    }
+    @media screen and (max-width: 580px) and (orientation: landscape) {
+      margin-bottom: 20px;
+
+      @include bg-svg($partner-molot-mobile);
     }
   }
 }
