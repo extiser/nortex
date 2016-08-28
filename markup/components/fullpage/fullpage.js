@@ -65,6 +65,8 @@ $(document).ready(function() {
       if ($('.jsMenuList').hasClass('_active') && $('.jsHeaderMenu').hasClass('_active')) {
         $('.jsMenuList, .jsHeaderMenu').removeClass('_active');
       }
+
+      leavingSection.children().children('.drawing').removeClass('_active');
     },
     afterLoad: function(anchorLink, index){
       var loadedSection = $(this);
@@ -75,8 +77,9 @@ $(document).ready(function() {
       } else {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
         $('.phone').removeClass('_hide');
-        
       }
+
+      loadedSection.children().children('.drawing').addClass('_active');
     },
     afterRender: function(){},
     afterResize: function(){},

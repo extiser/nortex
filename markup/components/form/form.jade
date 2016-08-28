@@ -1,13 +1,15 @@
 mixin form(data)
-  form.form.jsForm
+  form.form.jsForm(novalidate)
     .form-element
-      input(type="text" value="" placeholder="Как Вас зовут?" data-type="input" data-required="true").jsFormField
+      input(type="text" placeholder="Как Вас зовут?" required).jsFormField
+      .form-element-error._hide поле обязательно для заполнения
 
     .form-element
-      input(type="text" value="" placeholder="Телефон / Email" data-type="input" data-required="true").jsFormField
+      input(type="text" placeholder="Телефон / Email" required).jsFormField
+      .form-element-error._hide поле обязательно для заполнения
 
     .form-element._textarea
-      textarea(placeholder="Ваше сообщение" data-type="textarea" data-required="false").jsFormField
+      textarea(placeholder="Ваше сообщение").jsFormField
 
     .form-submit
-      input(type="submit" value="Отправить").button
+      input(type="submit" value="Отправить" name="send").button.jsFormSubmit

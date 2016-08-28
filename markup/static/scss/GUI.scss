@@ -172,6 +172,8 @@ p {
 
 
 .drawing {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   z-index: 2;
   top: 0;
@@ -181,6 +183,11 @@ p {
 
   width: 100%;
   height: 100%;
+  @include transition;
+  &._active {
+    visibility: visible;
+    opacity: 1;
+  }
   > div {
     position: absolute;
     @media screen and (max-width: 740px) {

@@ -20,9 +20,8 @@
   }
   &._textarea {
     margin-bottom: 96px;
-    &._active {
-      height: 120px;
-      margin-bottom: 33px;
+    &._error {
+      border-bottom: 2px solid $light-green;
     }
     .form-element-placeholder {
       top: 10px;

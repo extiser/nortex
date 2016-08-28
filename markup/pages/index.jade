@@ -14,15 +14,12 @@ html(class="no-js", lang="ru")
   include ../components/form/form
   include ../components/footer/footer
 
-  include ../components/fp-nav/fp-nav
-
   head
     +head(head.defaults)
   body
     |%=symbols=%
     +header
     +phone
-    //- +fp-nav
     #fullpage
       +section-top
       +section-about

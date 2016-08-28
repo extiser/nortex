@@ -5,10 +5,14 @@
 }
 
 .contact-block-contacts,
-.contact-block-form {
+.contact-block-form,
+.contact-block-thanks {
   width: 100%;
 
   @include absolute-center;
+  &._hide {
+    display: none;
+  }
 }
 
 .contact-block-contacts {

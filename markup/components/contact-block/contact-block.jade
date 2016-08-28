@@ -1,6 +1,6 @@
 mixin contact-block(data)
   .contact-block
-    .flip-container.jsFlipperContainer
+    .flip-container.jsFlipperContainer._hover
       .flipper
         .flipper-front
           .contact-block-contacts
@@ -12,3 +12,8 @@ mixin contact-block(data)
           .contact-block-form
             h2.contact-block-form__title.title._h2 Напишите нам
             +form
+
+          .contact-block-thanks._hide
+            h2.contact-block-thanks__title.title._h2 СПАСИБО
+            h3.contact-block-thanks__subtitle.title._h3 за Ваше обращение!
+            a(href="javascript:void(0)" title="Напишите нам").button.jsFlipperTrigger Контакты
