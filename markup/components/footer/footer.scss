@@ -1,4 +1,6 @@
 .footer {
+  backdrop-filter: blur(10px);
+
   position: absolute;
   z-index: 20;
   bottom: 0;

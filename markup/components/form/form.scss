@@ -22,6 +22,9 @@
     margin-bottom: 96px;
 
     resize: none;
+    @media screen and (max-width: 320px) {
+      margin-bottom: 20px;
+    }
     &._error {
       border-bottom: 2px solid $light-green;
     }
@@ -98,6 +101,9 @@
   line-height: 19px;
 
   @include transition;
+  @media screen and (max-width: 740px) {
+    display: none;
+  }
   &:before {
     position: absolute;
     top: 3px;

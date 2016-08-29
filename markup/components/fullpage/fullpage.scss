@@ -124,12 +124,18 @@ html.fp-enabled,
 
 #fp-nav ul,
 .fp-slidesNav ul {
+  @media screen and (max-width: 960px) {
+    display: none;
+  }
   margin: 0;
   padding: 0;
 
   list-style: none;
   &._active {
     li {
+      .fp-tooltip {
+        color: $purple;
+      }
       a {
         color: $purple;
         background-color: $purple;

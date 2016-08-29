@@ -66,6 +66,7 @@ $(document).ready(function() {
 
       if ($('.jsMenuList').hasClass('_active') && $('.jsHeaderMenu').hasClass('_active')) {
         $('.jsMenuList, .jsHeaderMenu').removeClass('_active');
+        $('.section').removeClass('_blur');
       }
 
       leavingSection.children().children('.drawing').removeClass('_active');
@@ -85,7 +86,9 @@ $(document).ready(function() {
         
       }
 
-      loadedSection.children().children('.drawing').addClass('_active');
+      setTimeout(function () {
+        loadedSection.children().children('.drawing').addClass('_active');
+      }, 500);
 
       if(index == 3) {
         $('.jsServiceLine').addClass('_active');
