@@ -18,14 +18,25 @@
 .contact-block-contacts {
   &__list {
     margin-bottom: 95px;
+    @media screen and (max-width: 740px) and (orientation: landscape) {
+      margin-bottom: 10px;
+    }
   }
   &__title {
     margin-bottom: 55px;
+    @media screen and (max-width: 740px) and (orientation: landscape) {
+      margin-bottom: 10px;
+    }
   }
 }
 
-.contact-block-form__title {
-  margin-bottom: 50px;
+.contact-block-form {
+  &__title {
+    margin-bottom: 50px;
+    @media screen and (max-width: 320px) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .contact-block-thanks {

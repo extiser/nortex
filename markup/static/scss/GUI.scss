@@ -7,6 +7,8 @@
 }
 
 .section {
+  transition: all .2s ease-in-out;
+
   background: linear-gradient(45deg, $blue 33%, $gray 100%);
   &:before {
     position: absolute;
@@ -20,6 +22,9 @@
     content: "";
 
     background-color: rgba($black, .2);
+  }
+  &._blur {
+    filter: blur(10px);
   }
 }
 
