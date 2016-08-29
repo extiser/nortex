@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   top: 0;
   left: 0;
 
@@ -54,6 +54,9 @@
   }
   &__content {
     @include absolute-center;
+    @media screen and (max-width: 960px) {
+      width: 90%;
+    }
     &:before {
       position: relative;
 
@@ -63,6 +66,12 @@
       margin-bottom: 48px;
 
       content: "";
+      @media screen and (max-width: 740px) {
+        margin-bottom: 36px;
+      }
+      @media screen and (max-width: 570px) and (orientation: landscape) {
+        margin-bottom: 18px;
+      }
     }
     &._about {
       border-top: 0;
@@ -102,5 +111,13 @@
     font-family: $Code-Pro-Bold;
     font-size: 38px;
     line-height: 33px;;
+    @media screen and (max-width: 960px) {
+      text-align: center;
+
+      font-size: 23px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 18px;
+    }
   }
 }

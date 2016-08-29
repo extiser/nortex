@@ -20,6 +20,8 @@
   }
   &._textarea {
     margin-bottom: 96px;
+
+    resize: none;
     &._error {
       border-bottom: 2px solid $light-green;
     }
