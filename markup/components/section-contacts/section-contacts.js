@@ -7,7 +7,6 @@ function init() {
     var mapOptions = {
         
         scrollwheel: false,
-        // How zoomed in you want the map to start at (always required)
         zoom: 17,
 
         mapTypeControl: false,

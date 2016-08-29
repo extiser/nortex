@@ -32,20 +32,88 @@
       }
     }
   }
-  &__menu {
-    z-index: 100;
+}
 
-    display: block;
+.header-menu {
+  position: relative;
+  z-index: 100;
 
-    text-indent: -9999px;
-    &._white {
-      @include bg-svg($menu-white);
+  display: block;
+
+  width: 38px;
+  height: 38px;
+
+  text-indent: -9999px;
+
+  border-radius: 50%;
+  &__line {
+    @include absolute-center;
+    @include transition;
+    &:before,
+    &:after {
+      display: block;
+
+      content: "";
+
+      @include horizontal-center;
+      @include transition;
     }
-    &._purple {
-      @include bg-svg($menu-purple);
+    &:before {
+      top: -4px;
     }
-    &._active {
-      @include bg-svg($menu-close-white);
+    &:after {
+      bottom: -4px;
+    }
+  }
+  &:hover {
+    .header-menu__line {
+      &:before {
+        top: -6px;
+      }
+      &:after {
+        bottom: -6px;
+      }
+    }
+  }
+  &._white {
+    border: 1.4px solid $white;
+    .header-menu__line {
+      @include bg-svg($menu-line-white);
+      &:before,
+      &:after {
+        @include bg-svg($menu-line-white);
+      }
+    }
+  }
+  &._purple {
+    border: 2px solid $purple;
+    .header-menu__line {
+      @include bg-svg($menu-line-purple);
+      &:before,
+      &:after {
+        @include bg-svg($menu-line-purple);
+      }
+    }
+  }
+  &._active {
+    @include transition;
+    .header-menu__line {
+      visibility: hidden;
+
+      opacity: 0;
+    }
+    &:before {
+      width: 12px;
+      height: 12px;
+
+      content: "";
+
+      background: url(%=static=%minified-svg/menu-close-white.svg) no-repeat center;
+
+      @include absolute-center;
+    }
+    &:hover {
+      transform: rotate(180deg);
     }
   }
 }
