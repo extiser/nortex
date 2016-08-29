@@ -79,14 +79,21 @@
   }
   &__line {
     position: absolute;
-    bottom: -40px;
+    top: 210px;
 
     width: 1px;
-    height: 102px;
+    height: 0;
 
     background-color: rgba($white, .7);
 
     @include horizontal-center;
+    @include transition;
+    &._active {
+      height: 102px;
+      @media screen and (max-width: 960px) and (orientation: all) {
+        display: none;
+      }
+    }
     @media screen and (max-width: 420px) {
       display: none;
     }
@@ -95,7 +102,18 @@
     }
   }
   &__bottom {
+    visibility: hidden;
+
     margin-top: 73px;
+
+    opacity: 0;
+
+    @include transition;
+    &._active {
+      visibility: visible;
+
+      opacity: 1;
+    }
     @media screen and (max-width: 420px) {
       margin-top: 10px;
       margin-bottom: 40px;

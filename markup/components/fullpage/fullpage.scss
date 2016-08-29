@@ -126,6 +126,19 @@ html.fp-enabled,
 .fp-slidesNav ul {
   margin: 0;
   padding: 0;
+
+  list-style: none;
+  &._active {
+    li {
+      a {
+        color: $purple;
+        background-color: $purple;
+        &.active {
+          border: 2px solid $purple;
+        }
+      }
+    }
+  }
   li {
     position: relative;
 
@@ -146,6 +159,8 @@ html.fp-enabled,
       cursor: pointer;
       text-decoration: none;
 
+      color: $white;
+      border-radius: 50%;
       background-color: $white;
 
       @include absolute-center;
@@ -157,41 +172,10 @@ html.fp-enabled,
 
         border: 2px solid $white;
         background-color: transparent;
-        // width: 10px;
-        // height: 10px;
-        // border: 2px solid $white;
-        // background-color: transparent;
-        // border-radius: 100%;
-        // #fp-nav ul li:hover &,
-        // #fp-slidesNav ul li:hover & {
-        //   width: 12px;
-        //   height: 12px;
-        //   margin: -6px 0 0 -6px;
-        //   border-radius: 100%;
-        // }
       }
       &:hover {
         width: 10px;
         height: 10px;
-      }
-      span {
-        position: absolute;
-        z-index: 1;
-        top: 50%;
-        left: 50%;
-
-        width: 4px;
-        height: 4px;
-        margin: -2px 0 0 -2px;
-
-        -webkit-transition: all .1s ease-in-out;
-           -moz-transition: all .1s ease-in-out;
-             -o-transition: all .1s ease-in-out;
-                transition: all .1s ease-in-out;
-
-        border: 0;
-        border-radius: 50%;
-        background: #333;
       }
     }
   }
@@ -199,6 +183,7 @@ html.fp-enabled,
 #fp-nav {
   position: fixed;
   z-index: 100;
+  z-index: 88;
   top: 50%;
 
   margin-top: -32px;
@@ -216,7 +201,7 @@ html.fp-enabled,
     li {
       .fp-tooltip {
         position: absolute;
-        top: 4px;
+        top: -4px;
 
         display: block;
         overflow: hidden;

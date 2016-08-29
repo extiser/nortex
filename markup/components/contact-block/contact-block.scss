@@ -28,6 +28,20 @@
   margin-bottom: 50px;
 }
 
+.contact-block-thanks {
+  &__subtitle {
+    margin-bottom: 90px;
+
+    text-align: center;
+
+    color: $white;
+
+    font-family: $Oswald-Regular;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 
 // анимация переворота
 .flip-container {

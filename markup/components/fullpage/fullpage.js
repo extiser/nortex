@@ -57,9 +57,11 @@ $(document).ready(function() {
       if (index == '4' && direction == 'down') {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_white').addClass('_purple');
         $('.phone').addClass('_hide');
+        $('#fp-nav ul').addClass('_active');
       } else if (index == '5' && direction == 'up') {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
         $('.phone').removeClass('_hide');
+        $('#fp-nav ul').removeClass('_active');
       }
 
       if ($('.jsMenuList').hasClass('_active') && $('.jsHeaderMenu').hasClass('_active')) {
@@ -74,18 +76,29 @@ $(document).ready(function() {
       if(index == 5){
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_white').addClass('_purple');
         $('.phone').addClass('_hide');
+        $('#fp-nav ul').addClass('_active');
+
       } else {
         $('.jsHeaderLogo, .jsHeaderMenu').removeClass('_purple').addClass('_white');
         $('.phone').removeClass('_hide');
+        $('#fp-nav ul').removeClass('_active');
+        
       }
 
       loadedSection.children().children('.drawing').addClass('_active');
+
+      if(index == 3) {
+        $('.jsServiceLine').addClass('_active');
+        setTimeout(function () {
+            $('.jsServiceText').addClass('_active');
+        }, 400);
+      } else {
+        $('.jsServiceLine, .jsServiceText').removeClass('_active');
+      }
     },
     afterRender: function(){},
     afterResize: function(){},
     afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
-    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
-        
-    }
+    onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
   });
 });
