@@ -13250,6 +13250,7 @@ $(document).ready(function() {
 
       if ($('.jsMenuList').hasClass('_active') && $('.jsHeaderMenu').hasClass('_active')) {
         $('.jsMenuList, .jsHeaderMenu').removeClass('_active');
+        $('.section').removeClass('_blur');
       }
 
       leavingSection.children().children('.drawing').removeClass('_active');
@@ -13269,7 +13270,9 @@ $(document).ready(function() {
         
       }
 
-      loadedSection.children().children('.drawing').addClass('_active');
+      setTimeout(function () {
+        loadedSection.children().children('.drawing').addClass('_active');
+      }, 500);
 
       if(index == 3) {
         $('.jsServiceLine').addClass('_active');
@@ -13290,6 +13293,7 @@ $(document).ready(function() {
 $('.jsHeaderMenu').click(function () {
   $(this).toggleClass('_active');
   $('.jsMenuList').toggleClass('_active');
+  $('.section').toggleClass('_blur');
 });
 
 
@@ -13305,6 +13309,11 @@ function init() {
         // How zoomed in you want the map to start at (always required)
         zoom: 17,
 
+        mapTypeControl: false,
+        scaleControl: false,
+        streetViewControl: false,
+        rotateControl: false,
+
         // The latitude and longitude to center the map (always required)
         center: new google.maps.LatLng(55.7565038, 37.5366518),
 
@@ -13313,8 +13322,12 @@ function init() {
         styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#4a6775"},{"visibility":"on"}]}]
     };
 
-    // Get the HTML DOM element that will contain your map 
-    // We are using a div with id="map" seen below in the <body>
+    var markerImage = new google.maps.MarkerImage(
+        '/static/images/assets/section-contacts/map-pic.png',
+        new google.maps.Size(43,49),
+        new google.maps.Point(0,0),
+        new google.maps.Point(43,49)
+    );
     var mapElement = document.getElementById('map');
 
     // Create the Google Map using our element and options defined above
@@ -13322,6 +13335,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
+        icon: markerImage,
         position: new google.maps.LatLng(55.7565038, 37.5366518),
         map: map,
         title: ''

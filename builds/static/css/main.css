@@ -415,6 +415,8 @@ blockquote {
 }
 
 .section {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   background: -webkit-linear-gradient(45deg, #1eb5c8 33%, #303649 100%);
   background: linear-gradient(45deg, #1eb5c8 33%, #303649 100%);
 }
@@ -428,6 +430,11 @@ blockquote {
   height: 100%;
   content: "";
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+.section._blur {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 a:hover {
@@ -671,12 +678,30 @@ body {
   margin-bottom: 95px;
 }
 
+@media screen and (max-width: 740px) and (orientation: landscape) {
+  .contact-block-contacts__list {
+    margin-bottom: 10px;
+  }
+}
+
 .contact-block-contacts__title {
   margin-bottom: 55px;
 }
 
+@media screen and (max-width: 740px) and (orientation: landscape) {
+  .contact-block-contacts__title {
+    margin-bottom: 10px;
+  }
+}
+
 .contact-block-form__title {
   margin-bottom: 50px;
+}
+
+@media screen and (max-width: 320px) {
+  .contact-block-form__title {
+    margin-bottom: 20px;
+  }
 }
 
 .contact-block-thanks__subtitle {
@@ -742,6 +767,8 @@ body {
 }
 
 .footer {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   position: absolute;
   z-index: 20;
   bottom: 0;
@@ -826,6 +853,12 @@ body {
   resize: none;
 }
 
+@media screen and (max-width: 320px) {
+  .form-element._textarea {
+    margin-bottom: 20px;
+  }
+}
+
 .form-element._textarea._error {
   border-bottom: 2px solid #2effed;
 }
@@ -897,6 +930,12 @@ body {
   line-height: 19px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 740px) {
+  .form-element-error {
+    display: none;
+  }
 }
 
 .form-element-error:before {
@@ -1038,6 +1077,18 @@ html.fp-enabled,
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 960px) {
+  #fp-nav ul,
+  .fp-slidesNav ul {
+    display: none;
+  }
+}
+
+#fp-nav ul._active li .fp-tooltip,
+.fp-slidesNav ul._active li .fp-tooltip {
+  color: #3c445c;
 }
 
 #fp-nav ul._active li a,
@@ -1342,13 +1393,15 @@ html.fp-enabled,
 
 @media screen and (max-width: 740px) {
   .menu-block__content:before {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
 }
 
 @media screen and (max-width: 570px) and (orientation: landscape) {
   .menu-block__content:before {
-    margin-bottom: 18px;
+    margin-bottom: 0;
   }
 }
 
@@ -1416,7 +1469,7 @@ html.fp-enabled,
 @media screen and (max-width: 960px) {
   .menu-block__title {
     text-align: center;
-    font-size: 23px;
+    font-size: 18px;
   }
 }
 
